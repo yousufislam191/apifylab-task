@@ -1,0 +1,132 @@
+body {
+    background-color: #E9EBEE;
+}
+
+.navBackground {
+    background-color: #34465D;
+}
+
+/*=====left and right column hide with responsive=====*/
+@media only screen and (max-width: 600px) {
+
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .right-column {
+        display: none;
+    }
+}
+
+/*=====Send icon responsive=====*/
+@media only screen and (max-width: 1439px) {
+
+    .message-send-icon {
+        position: absolute;
+        margin-left: 85%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .message-send-icon {
+        position: absolute;
+        margin-left: 90%;
+    }
+}
+
+/*=====search icon=====*/
+.search-icon {
+    position: absolute;
+    margin-left: 2%;
+}
+
+.position-relative,
+.search-position-relative {
+    position: relative;
+}
+
+.position-relative input {
+    outline: none;
+    padding: 1.5% 10% 2% 3%;
+}
+
+.search-position-relative input {
+    outline: none;
+    padding: 1.5% 3% 2% 8%;
+}
+
+/*=====navbar hover icon=====*/
+ul {
+    position: relative;
+}
+
+ul .hoverIcon a {
+    float: left;
+    margin-left: 25px;
+    padding: 10px 0px;
+    transition: 0.1s;
+    position: relative;
+}
+
+ul .hoverIcon a:after {
+    content: "";
+    height: 3px;
+    bottom: 1px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background: white;
+    transition: .3s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+ul .hoverIcon:hover a:after {
+    transform: scaleX(1);
+}
+
+/*=====create post=====*/
+.publicPost {
+    padding: 10px 15px 0px 15px;
+
+}
+
+/*=====profile picture icon=====*/
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/*=====react icon=====*/
+.blue-like-icon {
+    background-color: #13A0F8;
+    padding: 5%;
+    border-radius: 50%;
+    color: white;
+    font-size: smaller;
+}
+
+.red-love-icon {
+    background-color: #E92344;
+    padding: 5%;
+    border-radius: 50%;
+    color: white;
+    font-size: smaller;
+}
+
+.yellow-wow-icon {
+    background-color: #FFDA6A;
+    padding: 3%;
+    border-radius: 50%;
+    color: black;
+    font-size: medium;
+}
